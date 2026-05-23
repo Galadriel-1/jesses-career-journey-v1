@@ -1,3 +1,5 @@
+> 📦 **v1 backup** — first Project 2 attempt, preserved for reference. Live at https://jesses-career-journey-v1.vercel.app
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
