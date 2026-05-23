@@ -1,0 +1,16 @@
+[
+  {
+    "id": "interview-randomizer-amber",
+    "title": "Interview Question Randomizer for Amber",
+    "url": "https://interview-prep-for-amber.vercel.app/",
+    "description": "A personalized behavioral interview prep tool I built as a gift for Amber, who's transitioning into Product Management. Each click randomizes a thoughtful question plus a tip on how to answer it — tailored to the realities of pivoting into PM from a non-traditional path.",
+    "toolsLearned": [
+      "Next.js",
+      "Tailwind CSS",
+      "Vercel deployment",
+      "Claude Code",
+      "Subagents"
+    ],
+    "date": "2026-05-22"
+  }
+]

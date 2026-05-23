@@ -1,0 +1,128 @@
+{
+  "name": "Jesse Dim",
+  "headline": "Strategy Manager · cross-functional GTM and Customer Experience leader",
+  "summary": "Strategy Manager at Autodesk partnering with C-Suite leaders to design 3-5 year Go-To-Market and Customer Experience strategies. Background spans high-growth operations at DoorDash and Flexport, plus founding a logistics technology startup. Combines strategic planning, cross-functional execution, and human-centered design to drive measurable business outcomes.",
+  "experience": [
+    {
+      "role": "Strategy Manager",
+      "company": "Autodesk",
+      "location": null,
+      "start": "2023-01",
+      "end": "Present",
+      "emphasis": "big-moment",
+      "bullets": [
+        "Designed and led the \"Rhythm of Business\" (ROB) for cross-functional strategic initiatives, aligning Sales and Customer Success with organizational goals.",
+        "Developed the KPI reporting system for Customer Experience initiatives, driving growth and performance.",
+        "Engaged hundreds of stakeholders during the strategic intent and realization processes.",
+        "Designed and facilitated cross-functional workshops to define 3-5 year Go-To-Market and Customer Experience strategies.",
+        "Drove solution selling initiatives by collaborating with leaders to integrate support into Sales Motions.",
+        "Presented strategic vision to C-Suite executives, effectively communicating business strategies.",
+        "Partnered with the Chief Revenue Officer and Chief Customer Officer to create 3-5 year and annual strategic plans, ensuring alignment with organizational objectives, and presented them to other C-Suite Executives and Board of Directors."
+      ]
+    },
+    {
+      "role": "Founder",
+      "company": "Barter",
+      "location": "San Francisco, CA",
+      "start": "2022-04",
+      "end": "2022-12",
+      "bullets": [
+        "Founded a logistics technology company focused on small batch textile sourcing for ecommerce brands.",
+        "Developed go-to Market strategy that resulted in partnerships with over +15 brands in 6 months of operations with no prior relationships."
+      ]
+    },
+    {
+      "role": "Strategy & Operations Associate → Senior Associate (DashMart Launch Team)",
+      "company": "DoorDash",
+      "location": "San Francisco, CA",
+      "start": "2020-11",
+      "end": "2022-04",
+      "bullets": [
+        "Promoted from Associate to Senior Associate on the DashMart Launch Team.",
+        "Coordinated cross-functionally (with legal, construction, inventory, real estate, and local delivery teams in the US and Canada) to launch over 100 rapid micro-fulfillment warehouses in the US and Canada.",
+        "Partnered with DoorDash New Verticals senior leadership on DashMart regulatory policy, and reduced average zoning confirmation times from 8 weeks to 3 weeks.",
+        "Co-developed (with my manager and legal) zoning regulatory strategy for DashMart, while leading an internal team of 2 on direct zoning outreach with local governments.",
+        "Negotiated directly with city governments to permit our business use in over 100 cities.",
+        "Provided competitor analysis on micro-fulfillment landscape around launch and regulatory best practices."
+      ]
+    },
+    {
+      "role": "Mid Market Operations Associate → Enterprise Client Solutions Associate",
+      "company": "Flexport",
+      "location": "San Francisco, CA",
+      "start": "2019-07",
+      "end": "2020-09",
+      "bullets": [
+        "Promoted from Mid Market Operations Associate to Enterprise Client Solutions Associate.",
+        "Coordinated cross-functionally with internal teams, (procurement, pricing, customs, compliance, and product - in the US, EU and Asia) and external vendors (clients, truckers, warehouses, port terminals, carrier representatives) daily to ensure the continuous flow of 5 client's supply chains - totalling 250 shipments globally at a time.",
+        "Led customer engagement with 5 mid-market accounts.",
+        "Forecasted annual container demand for several clients using historical data, Excel and Looker. Produced bi-monthly commercial reviews of total volumes, and tracked net revenue goals.",
+        "Grew trade volumes in 2 accounts, increasing revenues by 2X to $4M annually.",
+        "Presented quarterly business reviews for each account analyzing transit times, and freight costs using excel and Looker. Used that information to pinpoint the cause of one client's increased accessorial costs and then reduce them by 54%.",
+        "Improved a mid-market client's container delivery process, including the introduction of an advanced system notice, that reduced accessorial costs by 22%.",
+        "Negotiated freight rates with LATAM client - securing a 6% ocean freight cost reduction for them, and 30 TEUs in retained volume for Flexport."
+      ]
+    },
+    {
+      "role": "Startup Advisor and Venture Due Diligence",
+      "company": "Independent",
+      "location": "San Francisco, CA",
+      "start": null,
+      "end": null,
+      "bullets": [
+        "Advise delivery and logistics startups on operations. Provide due diligence for venture firms on delivery and mobility investments.",
+        "LUMA Practitioner Human Centered Design Certified"
+      ]
+    }
+  ],
+  "skills": [
+    "Claude Code",
+    "Lovable",
+    "Vibecoding",
+    "Strategic Planning",
+    "Go-To-Market Strategy",
+    "Customer Experience Strategy",
+    "KPI Reporting",
+    "Cross-functional Leadership",
+    "Workshop Facilitation",
+    "C-Suite Communication",
+    "Solution Selling",
+    "Operations",
+    "Regulatory Strategy",
+    "Stakeholder Engagement",
+    "Competitor Analysis",
+    "Negotiation",
+    "Forecasting",
+    "Excel",
+    "Looker",
+    "Supply Chain Operations",
+    "Human Centered Design (LUMA Practitioner)",
+    "Startup Advising",
+    "Venture Due Diligence"
+  ],
+  "education": [
+    {
+      "school": "Dartmouth College",
+      "degree": "Bachelor of Arts",
+      "field": "History",
+      "start": "2013",
+      "end": "2017",
+      "emphasis": "before",
+      "activities": [
+        "The Dartmouth Vietnam Project (Oral Historian and Researcher)",
+        "The Dartmouth Rude Mechanicals (Student Shakespeare Troupe)",
+        "Casque and Gauntlet",
+        "Aquinas House — Catholic Students Association",
+        "Christian Union",
+        "Rockefeller Global Leadership Fellow",
+        "Mellon Mays Fellow"
+      ]
+    }
+  ],
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/jesse-dim-a6562899/",
+    "github": null,
+    "portfolio": null,
+    "email": "dim.453287@gmail.com"
+  }
+}
