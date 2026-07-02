@@ -2,7 +2,7 @@ import resumeData from "@/data/resume.json";
 import { Nav } from "@/components/Nav";
 import { Hero } from "@/components/Hero";
 import { Path } from "@/components/Path";
-import { Milestone } from "@/components/Milestone";
+import { Milestone, type MilestoneIcon } from "@/components/Milestone";
 import { Skills } from "@/components/Skills";
 import { Footer } from "@/components/Footer";
 
@@ -14,15 +14,27 @@ type Education = (typeof resumeData.education)[number] & {
   activities?: string[];
 };
 
-const ORNAMENTS = ["star", "flower", "moon"] as const;
+const COMPANY_ICONS: Record<string, MilestoneIcon> = {
+  Autodesk: "trending-up",
+  Barter: "rocket",
+  DoorDash: "truck",
+  Flexport: "ship",
+  "Dartmouth College": "graduation-cap",
+};
+
+const MONTHS = [
+  "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
+];
 
 function formatRange(start: string | null, end: string | null) {
   if (!start && !end) return "Ongoing";
   const fmt = (s: string | null) => {
     if (!s) return "";
     if (s === "Present") return "Present";
-    const [year] = s.split("-");
-    return year;
+    const [year, month] = s.split("-");
+    const m = month ? MONTHS[parseInt(month, 10) - 1] : undefined;
+    return m ? `${m} ${year}` : year;
   };
   return [fmt(start), fmt(end)].filter(Boolean).join(" — ");
 }
@@ -30,6 +42,8 @@ function formatRange(start: string | null, end: string | null) {
 export default function Home() {
   const { name, headline, summary, experience, education, skills, links } =
     resumeData;
+  const certifications =
+    (resumeData as { certifications?: string[] }).certifications ?? [];
 
   const allExp = experience as Experience[];
   const independent = allExp.find((e) => e.company === "Independent");
@@ -38,41 +52,41 @@ export default function Home() {
     .sort((a, b) => {
       if (!a.start) return 1;
       if (!b.start) return -1;
-      return a.start.localeCompare(b.start);
+      return b.start.localeCompare(a.start);
     });
 
   const edu = education[0] as Education | undefined;
 
   const milestones: Array<{
     key: string;
-    meta: string;
     title: string;
     subtitle?: string;
+    icon: MilestoneIcon;
     bullets: string[];
     emphasis?: "before" | "big-moment";
   }> = [];
 
-  if (edu) {
-    milestones.push({
-      key: "edu",
-      meta: `${edu.start} — ${edu.end}`,
-      title: edu.school,
-      subtitle: `${edu.degree}, ${edu.field}`,
-      bullets: edu.activities ?? ["Where the story begins."],
-      emphasis: edu.emphasis,
-    });
-  }
-
   pathExperience.forEach((role, idx) => {
     milestones.push({
       key: `role-${idx}`,
-      meta: formatRange(role.start, role.end),
-      title: role.company,
-      subtitle: role.role,
+      title: role.role,
+      subtitle: `${role.company} · ${formatRange(role.start, role.end)}`,
+      icon: COMPANY_ICONS[role.company] ?? "briefcase",
       bullets: role.bullets ?? [],
       emphasis: role.emphasis,
     });
   });
+
+  if (edu) {
+    milestones.push({
+      key: "edu",
+      title: edu.school,
+      subtitle: `${edu.degree}, ${edu.field} · ${formatRange(edu.start, edu.end)}`,
+      icon: COMPANY_ICONS[edu.school] ?? "graduation-cap",
+      bullets: edu.activities ?? ["Where the story begins."],
+      emphasis: edu.emphasis,
+    });
+  }
 
   return (
     <>
@@ -87,38 +101,44 @@ export default function Home() {
 
         <Path>
           {milestones.map((m, i) => {
-            const shape = ORNAMENTS[i % ORNAMENTS.length];
             const side: "left" | "right" = i % 2 === 0 ? "left" : "right";
             const cap = m.key === "edu" ? m.bullets.length : 4;
             return (
               <Milestone
                 key={m.key}
                 side={side}
-                shape={shape}
+                icon={m.icon}
                 emphasis={m.emphasis}
-                meta={m.meta}
                 title={m.title}
                 subtitle={m.subtitle}
+                bullets={m.bullets.slice(0, cap)}
                 index={i}
-              >
-                {m.bullets.slice(0, cap).map((b, j) => (
-                  <p key={j}>&mdash; {b}</p>
-                ))}
-              </Milestone>
+              />
             );
           })}
         </Path>
 
         <Skills
           skills={skills}
-          alsoCurrently={
-            independent
-              ? {
-                  title: independent.role,
-                  description: (independent.bullets ?? []).join(" "),
-                }
-              : undefined
-          }
+          certifications={certifications}
+          alsoCurrently={{
+            items: [
+              ...(independent?.bullets ?? []),
+              <>
+                Running{" "}
+                <a
+                  href="https://buildbeautifully.lovable.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-[color:var(--accent-warm)] underline underline-offset-4 hover:opacity-80 transition-opacity"
+                >
+                  Building Beautifully
+                </a>{" "}
+                — an AI workshop series teaching non-technical people to build
+                with Claude Code.
+              </>,
+            ],
+          }}
         />
 
         <Footer

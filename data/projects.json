@@ -12,5 +12,18 @@
       "Subagents"
     ],
     "date": "2026-05-22"
+  },
+  {
+    "id": "mamas-cozy-kitchen",
+    "title": "Mama's Cozy Kitchen",
+    "url": "https://cooking-mama-mini.vercel.app/",
+    "description": "A cozy, kid-friendly cooking game inspired by Cooking Mama. Little chefs cook alongside Mama through three recipes — veggie soup, hot cocoa, and pancakes — with interactive steps like chopping vegetables along dotted lines, playful cartoon graphics, and cheerful encouragement when each dish is done.",
+    "toolsLearned": [
+      "Claude Code",
+      "Next.js",
+      "Tailwind CSS",
+      "SVG animation & interactivity"
+    ],
+    "date": "2026-07-01"
   }
 ]

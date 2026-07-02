@@ -1,36 +1,25 @@
-"use client";
-
 import { ReactNode } from "react";
 
 export function Path({ children }: { children: ReactNode }) {
   return (
-    <section className="relative max-w-7xl mx-auto px-6 md:px-12 py-32">
-      <div className="hidden md:block absolute left-1/2 top-0 -translate-x-1/2 h-full pointer-events-none">
-        <svg
-          width="160"
-          height="100%"
-          viewBox="0 0 160 1000"
-          preserveAspectRatio="none"
-          className="h-full"
-          aria-hidden="true"
-        >
-          <defs>
-            <linearGradient id="pathGrad" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="oklch(0.18 0.008 60)" stopOpacity="0.1" />
-              <stop offset="50%" stopColor="oklch(0.58 0.14 38)" stopOpacity="0.5" />
-              <stop offset="100%" stopColor="oklch(0.18 0.008 60)" stopOpacity="0.1" />
-            </linearGradient>
-          </defs>
-          <path
-            d="M 80 0 C 10 200, 150 380, 80 500 C 10 620, 150 800, 80 1000"
-            stroke="url(#pathGrad)"
-            strokeWidth="2"
-            fill="none"
-            strokeDasharray="3 8"
-          />
-        </svg>
-      </div>
-      <div className="relative flex flex-col gap-40 md:gap-48">{children}</div>
+    <section id="journey" className="relative max-w-7xl mx-auto px-6 md:px-8 lg:px-16 py-32">
+      <header className="text-center mb-20">
+        <p className="font-heading text-xs font-bold uppercase tracking-[0.28em] text-primary mb-4">
+          the journey
+        </p>
+        <h2 className="font-heading text-4xl md:text-6xl font-black tracking-tight leading-tight">
+          A path, with stops.
+        </h2>
+      </header>
+      <div
+        className="md:hidden pointer-events-none absolute left-[34px] top-72 bottom-32 w-[2px] bg-gradient-to-b from-primary/40 via-foreground/15 to-primary/40"
+        aria-hidden="true"
+      />
+      <div
+        className="hidden md:block pointer-events-none absolute left-1/2 -translate-x-1/2 top-72 bottom-32 w-[2px] bg-gradient-to-b from-primary/40 via-foreground/15 to-primary/40 shadow-[0_0_24px_rgba(138,99,184,0.15)]"
+        aria-hidden="true"
+      />
+      <div className="relative space-y-16 md:space-y-28">{children}</div>
     </section>
   );
 }

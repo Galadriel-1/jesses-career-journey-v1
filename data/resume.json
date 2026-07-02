@@ -70,8 +70,8 @@
       "start": null,
       "end": null,
       "bullets": [
-        "Advise delivery and logistics startups on operations. Provide due diligence for venture firms on delivery and mobility investments.",
-        "LUMA Practitioner Human Centered Design Certified"
+        "Advise delivery and logistics startups on operations.",
+        "Provide due diligence for venture firms on delivery and mobility investments."
       ]
     }
   ],
@@ -96,7 +96,6 @@
     "Excel",
     "Looker",
     "Supply Chain Operations",
-    "Human Centered Design (LUMA Practitioner)",
     "Startup Advising",
     "Venture Due Diligence"
   ],
@@ -124,5 +123,8 @@
     "github": null,
     "portfolio": null,
     "email": "dim.453287@gmail.com"
-  }
+  },
+  "certifications": [
+    "LUMA Practitioner Human Centered Design Certified"
+  ]
 }

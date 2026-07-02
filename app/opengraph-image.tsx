@@ -31,10 +31,10 @@ export default async function Image() {
   if (cormorant) fonts.push({ name: "Cormorant", data: cormorant, weight: 500, style: "normal" });
   if (inter) fonts.push({ name: "Inter", data: inter, weight: 400, style: "normal" });
 
-  const cream = "#FAF5E9";
-  const ink = "#221C18";
-  const inkSoft = "#6E665D";
-  const accent = "#B85F30";
+  const cream = "#F6F2F9";
+  const ink = "#241C2E";
+  const inkSoft = "#6D6478";
+  const accent = "#8A63B8";
 
   const Star = ({
     sz,
@@ -75,7 +75,7 @@ export default async function Image() {
           width: "100%",
           height: "100%",
           display: "flex",
-          background: `linear-gradient(135deg, ${cream} 0%, #F2E6D1 60%, #E8D2B0 100%)`,
+          background: `linear-gradient(135deg, ${cream} 0%, #EDE3F4 60%, #DDCCEC 100%)`,
           fontFamily: bodyFont,
           padding: "70px 80px",
         }}
