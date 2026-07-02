@@ -33,8 +33,7 @@
     "description": "A clean bill-splitting tool for group dinners and shared expenses. Add your people, enter each line item, and assign who had what — it splits tip and tax proportionally and copies a tidy per-person breakdown you can paste straight into the group chat.",
     "toolsLearned": [
       "Claude Code",
-      "React + Vite",
-      "Vercel deployment"
+      "React + Vite"
     ],
     "date": "2026-07-01"
   }
