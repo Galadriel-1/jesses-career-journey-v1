@@ -36,5 +36,17 @@
       "React + Vite"
     ],
     "date": "2026-07-01"
+  },
+  {
+    "id": "storyteller",
+    "title": "StoryTeller",
+    "url": "https://speakastory.vercel.app/",
+    "description": "Speak a story out loud and get a beautiful, printable children's book. Narrate your tale with your voice and StoryTeller turns it into a formatted book you can print and read together at bedtime.",
+    "toolsLearned": [
+      "Claude Code",
+      "Next.js",
+      "Voice input (speech-to-text)"
+    ],
+    "date": "2026-07-02"
   }
 ]
